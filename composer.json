@@ -1,0 +1,18 @@
+{
+    "name": "muneth/posty-mvc-crud",
+    "authors": [
+        {
+            "name": "muneet",
+            "email": "muneetchaudhary@me.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Posty\\" : "./app"
+        }
+    },
+    "require": {
+        
+        "vlucas/phpdotenv": "^5.3"
+    }
+}

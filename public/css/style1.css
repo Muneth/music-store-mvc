@@ -1,0 +1,754 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: fall in love;
+}
+
+/* ==========  UTILITES ============= */
+
+.mt {
+  margin-top: 2rem;
+}
+
+#header {
+  background: url("../vinyles-artistes/fond-top.jpg");
+  background-size: cover;
+  height: 800px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchlogo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  width: 100%;
+}
+
+#logo a {
+  font-family: fall in love;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fefefe;
+}
+
+#search {
+  width: 300px;
+  margin-top: 7px;
+}
+
+#search i {
+  position: absolute;
+}
+
+.fa-magnifying-glass {
+  padding: 7px;
+  color: #888486;
+}
+
+.input-field {
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #d1c7be;
+  border-radius: 20px;
+  background-color: #d1c7be;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+#icons {
+  margin-top: 20px;
+}
+#icons i {
+  color: #d1c7be;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+#tracklogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracklogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tracklogo img {
+  width: 40%;
+}
+
+/*------------------- NAVBAR ---------------*/
+
+#nav {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+}
+
+.topnav a {
+  margin-left: 5rem;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* .active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+.topnav .icon {
+  display: none;
+  color: #fefefe;
+  background-color: inherit;
+  border: none;
+  font-size: 2rem;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav .icon {
+    display: flex;
+    align-self: flex-end;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav {
+    flex-direction: column;
+  }
+  .topnav a {
+    margin-left: 0;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 30%;
+    text-align: left;
+  }
+}
+
+/* -----------------  MAIN  ------------------- */
+
+/* -----------------SECTION-1 ------------------ */
+
+#first-heading {
+  color: white;
+  font-weight: 300;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.records-fav {
+  display: flex;
+  flex-direction: column;
+}
+
+.records {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.records a {
+  text-decoration: none;
+  margin: auto;
+  color: black;
+}
+
+.carte {
+  width: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  background-color: #fef9f5;
+  border: 2px solid #d0c8c0;
+  margin-bottom: 2rem;
+}
+
+.carte img {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+.carte-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carte-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.carte-dis {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.carte-genre {
+  color: #888486;
+  margin-bottom: 5px;
+}
+
+.carte-price {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* -----------------SECTION-2 ------------------ */
+
+#second-heading {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-left: 1rem;
+}
+
+/* ----------------SECTION-3 ------------------- */
+
+#groups {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.artistes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#groups h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* ---------------------SLIDER ---------------- */
+
+.splide {
+  padding: 30px;
+}
+
+.splide__slide img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.img-des {
+  margin-top: 15px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------FOOTER ---------------- */
+
+#footer {
+  background: url("../vinyles-artistes/fond-bottom.jpg");
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid #e3b2b6;
+  top: 0;
+  width: 400px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  width: 700px;
+  background-color: #f2dcdf;
+  padding: 50px;
+}
+
+#social p {
+  color: #986e78;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#social input {
+  background-color: inherit;
+  outline: none;
+  border: 1px solid #b39996;
+  padding: 3px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+#social button {
+  background-color: #986e78;
+  padding: 3px;
+  border-radius: 5px;
+  border: inherit;
+  width: 15%;
+  color: #b4a1a1;
+}
+
+#social .fa-brands {
+  color: #c3989f;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+#services .svg {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+
+.end {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  border-bottom: 3px solid #e3b2b6;
+  width: 600px;
+}
+
+.copyright {
+  margin-top: 1rem;
+  color: white;
+}
+
+/*---------------------PAGE - 2 --------------- */
+
+.active {
+  color: black;
+}
+
+.top-page-2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  padding: 10px;
+}
+
+.top-page-2 .left {
+  width: 24%;
+  margin-right: 1rem;
+  border: 3px solid #e3b2b6;
+}
+
+.top-page-2 .right {
+  width: 70%;
+  margin-left: 2rem;
+}
+
+.left .fd {
+  padding: 20px;
+  background-color: #e3b2b6;
+}
+
+.fd h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 400;
+}
+
+.left .sel {
+  padding: 20px;
+}
+
+.top-page-2 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-page-2 a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.selected {
+  color: red !important;
+}
+
+.right h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.right .right-sec {
+  border: 3px solid #e3b2b6;
+  padding: 30px;
+}
+
+.right .right-sec .sec-1 {
+  margin-bottom: 2rem;
+}
+
+.sec-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-list {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+/* ----------------------SINGLE PAGE -------------------- */
+
+#artistes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: #757d80;
+  border-radius: 20px;
+}
+
+#img-artiste {
+  width: 50%;
+  padding: 5rem;
+}
+
+#img-artiste img {
+  width: 100%;
+}
+
+#info-artiste {
+  width: 50%;
+  padding: 2rem;
+}
+
+.artiste-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.artiste-dis {
+  color: #e4edf0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.artiste-date {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.artiste-genre {
+  color: black;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: end;
+}
+
+.artiste-price {
+  font-size: 2.5rem;
+  color: #e4edf0;
+}
+
+@media screen and (max-width: 480px) {
+  /* -------------------- HEADER ---------------- */
+
+  #top {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  #searchlogo {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  /* ------------MAIN PAGE ---------- */
+
+  #first-heading {
+    font-size: 1.8rem;
+  }
+
+  /* -----------------SECTION-2 ------------------ */
+
+  #second-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* ---------------------SLIDER ---------------- */
+
+  .splide__slide img {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .img-des {
+    margin-top: 15px;
+    width: 50%;
+  }
+
+  /* --------------FOOTER  -------------------------*/
+
+  .fancy span:before,
+  .fancy span:after {
+    display: none;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  #social p {
+    margin-bottom: 20px;
+  }
+
+  #social input {
+    margin-bottom: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  /* -------------SECOND-PAGE ------------- */
+
+  .left {
+    display: none;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+
+  .right-sec {
+    display: none;
+  }
+
+  /* --------------- SINGLE VINYLE PAGE --------------- */
+
+  #artistes {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #img-artiste {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #img-artiste img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #info-artiste {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .artiste-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .artiste-dis {
+    font-size: 0.9rem;
+  }
+
+  .artiste-date {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+
+  .artiste-genre {
+    font-size: 1.1rem;
+  }
+
+  .artiste-price {
+    font-size: 1.2rem;
+  }
+}
